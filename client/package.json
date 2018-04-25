@@ -23,9 +23,15 @@
     "redux-thunk": "^2.2.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "yarn sass:build && react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "sass:watch": "node-sass -w src/styles/scss -o src/styles/css",
+    "sass:build": "node-sass src/styles/scss -o src/styles/css --source-map true",
+    "start": "concurrently \"yarn run sass:build && react-scripts start\" \"yarn run sass:watch\""
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.1",
+    "node-sass": "^4.8.3"
   }
 }

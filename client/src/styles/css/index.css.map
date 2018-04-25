@@ -1,0 +1,10 @@
+{
+	"version": 3,
+	"file": "index.css",
+	"sources": [
+		"../scss/index.scss",
+		"../scss/App.scss"
+	],
+	"names": [],
+	"mappings": "ACAA,AAAA,CAAC,CAAC;EACE,WAAW,EAAE,0BAA0B,GAC1C"
+}

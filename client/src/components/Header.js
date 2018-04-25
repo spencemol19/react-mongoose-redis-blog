@@ -34,7 +34,7 @@ class Header extends Component {
             className="left brand-logo"
             style={{ marginLeft: '10px' }}
           >
-            Blogster
+            BluJS
           </Link>
           <ul className="right">{this.renderContent()}</ul>
         </div>

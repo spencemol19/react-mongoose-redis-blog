@@ -8,6 +8,9 @@ import reduxThunk from 'redux-thunk';
 import App from './components/App';
 import reducers from './reducers';
 
+/* Stylesheets */
+import './styles/css/index.css';
+
 import axios from 'axios';
 window.axios = axios;
 
