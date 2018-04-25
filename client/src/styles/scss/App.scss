@@ -1,3 +1,18 @@
+/* Color pallete */
+$blu-primary: #88bbdd;
+$blu-secondary: #7788aa;
+$blu-dark: #223366;
+$blu-bg: #ddddee;
+$blu-generic: #ccc;
+
 .brand-logo {
-    font-family: 'Gugi', cursive !important;
+    font-family: 'Gugi', cursive;
+}
+
+h1.brand-logo {
+    color: $blu-primary;
+}
+
+nav {
+    background-color: $blu-primary;
 }

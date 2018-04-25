@@ -7,6 +7,8 @@ const Landing = () => {
         BluJS!
       </h1>
       Write private blogs
+      <p>Coming soon:<br/>
+      BluJS: JavaScript Challenges &amp; Playground</p>
     </div>
   );
 };

@@ -1,2 +1,9 @@
-* {
-  font-family: 'Gugi', cursive !important; }
+/* Color pallete */
+.brand-logo {
+  font-family: 'Gugi', cursive; }
+
+h1.brand-logo {
+  color: #88bbdd; }
+
+nav {
+  background-color: #88bbdd; }
