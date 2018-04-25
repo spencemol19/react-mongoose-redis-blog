@@ -7,6 +7,20 @@ $blu-generic: #ccc;
 
 .brand-logo {
     font-family: 'Gugi', cursive;
+    &:not(h1) {
+        padding-left: 45px;
+        &:before {
+            content: '';
+            background-image: url('../../assets/blu_logo_gh.png');
+            width: 48px;
+            height: 48px;
+            left: 5px;
+            top: 10px;
+            position: absolute;
+            background-position: center center;
+            background-size: 100% 100%;
+        }
+    }
 }
 
 h1.brand-logo {
@@ -14,5 +28,5 @@ h1.brand-logo {
 }
 
 nav {
-    background-color: $blu-primary;
+    background-color: $blu-dark;
 }

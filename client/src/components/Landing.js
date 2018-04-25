@@ -4,11 +4,11 @@ const Landing = () => {
   return (
     <div style={{ textAlign: 'center' }}>
       <h1 className="brand-logo">
-        BluJS!
+        Welcome to BluJS!
       </h1>
-      Write private blogs
-      <p>Coming soon:<br/>
-      BluJS: JavaScript Challenges &amp; Playground</p>
+      <br/>
+      <h3>Coming soon:<br/><br/>
+      <span style={{fontWeight: 300}}>JavaScript Challenges &amp; Playground</span></h3>
     </div>
   );
 };

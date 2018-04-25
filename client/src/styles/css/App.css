@@ -1,9 +1,21 @@
 /* Color pallete */
 .brand-logo {
   font-family: 'Gugi', cursive; }
+  .brand-logo:not(h1) {
+    padding-left: 45px; }
+    .brand-logo:not(h1):before {
+      content: '';
+      background-image: url("../../assets/blu_logo_gh.png");
+      width: 48px;
+      height: 48px;
+      left: 5px;
+      top: 10px;
+      position: absolute;
+      background-position: center center;
+      background-size: 100% 100%; }
 
 h1.brand-logo {
   color: #88bbdd; }
 
 nav {
-  background-color: #88bbdd; }
+  background-color: #223366; }
