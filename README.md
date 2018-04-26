@@ -1,5 +1,5 @@
 # blog-sample-redis-mongoose
-A basic Blog application with React, Redux, Express, Node, and MongoDB with Redis as a caching layer
+A basic Blog application with React, Redux, Express, Node, and MongoDB with Redis as a caching layer. Base for upcoming open-source project: BluJS (more details to come)
 
 ## Install node_modules in the root directory & within the ./client folder
 `npm install`
