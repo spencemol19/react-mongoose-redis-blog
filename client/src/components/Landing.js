@@ -1,4 +1,5 @@
 import React from 'react';
+import Preloader from './misc/Preloader';
 
 const Landing = () => {
   return (
@@ -7,8 +8,10 @@ const Landing = () => {
         Welcome to BluJS!
       </h1>
       <br/>
-      <h3>Coming soon:<br/><br/>
-      <span style={{fontWeight: 300}}>JavaScript Challenges &amp; Playground</span></h3>
+      <h4>Coming soon:<br/><br/>
+      <span style={{fontWeight: 300}}>JavaScript Challenges &amp; Playground</span></h4>
+      <br/>
+      <Preloader />
     </div>
   );
 };

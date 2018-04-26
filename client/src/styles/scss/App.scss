@@ -29,4 +29,80 @@ h1.brand-logo {
 
 nav {
     background-color: $blu-dark;
+    width: calc(100% + 10%);
+    margin-left: -5%;
+}
+
+/* Custom preloader styles */
+#preloader-wrapper {
+    width: 300px;
+    margin: 0 auto;
+    cursor: pointer;
+    position: relative;
+    svg.circle-svg {
+        will-change: stroke-dasharray, fill;
+        stroke: #7788aa;
+        stroke-width: 12;
+        display: block;
+        margin: 0 auto;
+        width: 300px;
+        height: 300px;
+        fill: transparent;
+        stroke-dasharray: 80;
+        transition: all 0.4s ease-in-out;
+        animation: rotate 1.3s linear .5s forwards; /*infinite alternate*/
+        animation-iteration-count: 1;
+    }
+    .blu-logo {
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        top: 75px;
+        left: 55px;
+        background-position: center center;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-image: url("../../assets/blu_logo_gh.png");
+        animation: fade 1.3s linear .5s forwards; /*infinite alternate*/
+        animation-iteration-count: 1;
+    }
+    .js-logo {
+        position: absolute;
+        bottom: 125px;
+        right: 55px;
+        width: 120px;
+        height: 64px;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-image: url('../../assets/js_wiki.svg');
+        animation: fade 1.3s linear .5s forwards; /*infinite alternate*/
+        animation-iteration-count: 1;
+    }
+    /* Keyframes for rotate and fade */
+    @keyframes rotate {
+        from {
+            stroke-dasharray: 80;
+        }
+        to {
+            stroke-dasharray: 0;
+            stroke-width: 3;
+            stroke: #88bbdd;
+            fill: #223366;
+        }
+    }
+    @keyframes fade {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .brand-logo:not(h1):before {
+        content: none;
+    }
 }

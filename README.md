@@ -6,4 +6,3 @@ A basic Blog application with React, Redux, Express, Node, and MongoDB with Redi
 
 ## Launch the dev build after you include your own MongoDB URI, and reference an instance of REDIS running on your local machine on port 6397 (default) with:
 `npm run dev`
-
