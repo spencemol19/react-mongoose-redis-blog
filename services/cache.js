@@ -1,7 +1,8 @@
 const redis = require('redis');
 const util = require('util');
-const redisUrl = 'redis://127.0.0.1:6379';
-const client = redis.createClient(redisUrl);
+const redisUrl = require('../config/dev.js').redisURI;
+const client = redis.createClient("16348", "redis-16348.c1.us-west-2-2.ec2.cloud.redislabs.com");
+client.auth("YK8aHJiZthBmchwI93ErNUmh5BcfhipW");
 client.hget = util.promisify(client.hget);
 
 const mongoose = require('mongoose');
