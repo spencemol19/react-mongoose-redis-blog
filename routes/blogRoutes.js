@@ -21,6 +21,23 @@ module.exports = app => {
     res.send(blogs);
   });
 
+  app.delete('/api/blogs/:id', requireLogin, cleanCache, async (req, res) => {
+    const blog = await Blog.findOne({
+      _user: req.user.id, 
+      _id: req.params.id
+    }).remove().exec();
+
+    const blogs = await Blog
+      .find({ _user: req.user.id })
+      .cache({ key: req.user.id });
+
+    console.log(blogs + "\n");
+
+    console.log(blogs[0]);
+
+    res.send(blogs);
+  });
+
   app.post('/api/blogs', requireLogin, cleanCache, async (req, res) => {
     const { title, content } = req.body;
 
